@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "changeloggen"
+version = "0.1.0"
+description = "Generate changelogs from local Git history and tags."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "BYREX"}]
+dependencies = []
+
+[project.scripts]
+changeloggen = "changeloggen.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
